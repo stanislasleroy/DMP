@@ -1,4 +1,4 @@
-package fr.stanislasleroy.DMP;
+package fr.stanislasleroy.dmp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
