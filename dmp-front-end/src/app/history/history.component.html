@@ -1,0 +1,22 @@
+<h3>Historique des accès</h3>
+
+<!-- <ul>
+    <li *ngFor="let history of histories" >{{history.id}} : {{history.name}} - {{history.content}}</li>
+</ul> -->
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Auteur</th>
+    <th>Action</th>
+    <th>Contexte</th>
+  </tr>
+  <tr *ngFor="let history of histories">
+    <td>{{history.date | date: 'dd/MM/yy, h:mm:ss'}} </td>
+    <td>{{history.author}}</td>
+    <td>{{history.action}}</td>
+    <td>{{history.context}}</td>
+  </tr>
+</table>
+
+

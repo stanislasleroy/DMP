@@ -1,0 +1,31 @@
+<h3>Liste des documents</h3>
+
+<div id="filter">
+  <span>Filtrer la liste des documents</span>
+
+  Par auteur<input type="text" >
+  Par profession/spécialité<input type="text" >
+  Entre le<input type="text" >
+  et le<input type="text" >
+</div>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Titre</th>
+    <th>Date début</th>
+    <th>Date fin</th>
+    <th>Auteur</th>
+    <th>Profession</th>
+  </tr>
+  <tr *ngFor="let document of documents">
+    <td>{{document.type}}</td>
+    <td>{{document.title}}</td>
+    <td>{{document.start | date: 'dd/MM/yy, h:mm:ss'}} </td>
+    <td>{{document.end | date: 'dd/MM/yy, h:mm:ss'}} </td>
+    <td>{{document.author}}</td>
+    <td>{{document.profession}}</td>
+  </tr>
+</table>
+
+<button mat-button>Archiver</button>
